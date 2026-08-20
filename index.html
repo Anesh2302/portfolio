@@ -6,64 +6,76 @@
   <title>Anesh G J — Developer Portfolio</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Bangers&family=Inter:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Bangers&family=Inter:wght@400;500;600;700;800;900&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
-  <!-- MARVEL-STYLE NAV -->
+  <!-- NAV -->
   <nav class="navbar" id="navbar">
     <div class="nav-container">
-      <a href="#hero" class="nav-logo">ANESH<span class="logo-sub">DEV</span></a>
+      <a href="#hero" class="nav-logo">
+        <span class="logo-box">A</span>
+        <span class="logo-text">NESH<span class="gold">DEV</span></span>
+      </a>
       <ul class="nav-links">
         <li><a href="#about">About</a></li>
         <li><a href="#projects">Projects</a></li>
         <li><a href="#resume">Resume</a></li>
         <li><a href="#contact">Contact</a></li>
       </ul>
-      <button class="nav-toggle" id="navToggle" aria-label="Toggle menu">
+      <button class="nav-toggle" id="navToggle" aria-label="Menu">
         <span></span><span></span><span></span>
       </button>
     </div>
   </nav>
 
-  <!-- HERO — MARVEL SPLASH PAGE -->
+  <!-- HERO — MARVEL SPLASH -->
   <section class="hero" id="hero">
-    <div class="hero-bg"></div>
+    <div class="halftone"></div>
     <div class="hero-content">
       <div class="hero-layout">
         <div class="hero-text">
-          <div class="hero-badge">FULL-STACK DEVELOPER</div>
-          <h1 class="hero-name">ANESH<br><span class="accent">G J</span></h1>
-          <p class="hero-tagline">I build web apps, AI tools &amp; security platforms.</p>
+          <div class="comic-badge">I AM</div>
+          <h1 class="hero-name">
+            <span class="name-line">ANESH</span>
+            <span class="name-line accent">G J</span>
+          </h1>
+          <p class="hero-tagline">Full-Stack Developer &amp; Security Enthusiast</p>
+          <p class="hero-desc">I build web apps, AI tools &amp; security platforms. From idea to production.</p>
           <div class="hero-buttons">
-            <a href="#projects" class="btn btn-marvel">VIEW MY WORK</a>
-            <a href="#contact" class="btn btn-outline-marvel">GET IN TOUCH</a>
+            <a href="#projects" class="btn btn-red">VIEW MY WORK</a>
+            <a href="#contact" class="btn btn-white">GET IN TOUCH</a>
           </div>
         </div>
-        <div class="hero-photo-wrap">
-          <div class="photo-ring"></div>
-          <div class="photo-ring ring-2"></div>
-          <img src="profile.jpg" alt="Anesh G J" class="hero-photo">
+        <div class="hero-photo-section">
+          <div class="photo-frame">
+            <img src="profile.jpg" alt="Anesh G J" class="hero-photo">
+          </div>
+          <div class="photo-action-text">DEVELOPER</div>
         </div>
       </div>
     </div>
-    <div class="hero-stripes"></div>
+    <!-- comic action bursts -->
+    <div class="burst burst-1">BOOM!</div>
+    <div class="burst burst-2">POW!</div>
   </section>
 
-  <!-- ABOUT -->
+  <!-- ABOUT — SPEECH BUBBLE STYLE -->
   <section class="about" id="about">
     <div class="container">
-      <div class="section-header">
-        <span class="section-tag">WHO AM I</span>
-        <h2 class="section-title">About Me</h2>
-      </div>
-      <div class="about-grid">
-        <div class="about-text">
-          <p>I build things — from AI assistants to full-stack web platforms to security tooling. I enjoy working across the entire stack and solving real problems.</p>
-          <p>Currently focused on Flask/Python backends, JavaScript frontends, and cybersecurity tools.</p>
-          <div class="tech-stack">
-            <h3>Tech Stack</h3>
+      <div class="comic-panel">
+        <div class="panel-header">
+          <span class="panel-number">01</span>
+          <h2 class="panel-title">ABOUT ME</h2>
+        </div>
+        <div class="about-grid">
+          <div class="speech-bubble">
+            <p>I build things — from AI assistants to full-stack web platforms to security tooling. I enjoy working across the entire stack and solving real problems.</p>
+            <p>Currently focused on Flask/Python backends, JavaScript frontends, and cybersecurity tools.</p>
+          </div>
+          <div class="tech-box">
+            <h3>MY WEAPONS OF CHOICE</h3>
             <div class="tech-tags">
               <span class="tag">Python</span>
               <span class="tag">JavaScript</span>
@@ -83,149 +95,137 @@
     </div>
   </section>
 
-  <!-- PROJECTS -->
+  <!-- PROJECTS — COMIC PANELS -->
   <section class="projects" id="projects">
     <div class="container">
-      <div class="section-header">
-        <span class="section-tag">MY WORK</span>
-        <h2 class="section-title">Projects</h2>
-      </div>
+      <div class="comic-panel">
+        <div class="panel-header">
+          <span class="panel-number">02</span>
+          <h2 class="panel-title">MY PROJECTS</h2>
+        </div>
 
-      <div class="project-filters">
-        <button class="filter-btn active" data-filter="all">ALL</button>
-        <button class="filter-btn" data-filter="web">WEB APPS</button>
-        <button class="filter-btn" data-filter="ai">AI / DESKTOP</button>
-        <button class="filter-btn" data-filter="tool">TOOLS</button>
-      </div>
+        <div class="project-filters">
+          <button class="filter-btn active" data-filter="all">ALL</button>
+          <button class="filter-btn" data-filter="web">WEB APPS</button>
+          <button class="filter-btn" data-filter="ai">AI</button>
+          <button class="filter-btn" data-filter="tool">TOOLS</button>
+        </div>
 
-      <div class="projects-grid">
+        <div class="projects-grid">
 
-        <!-- 1. Talentos -->
-        <div class="project-card" data-category="web">
-          <div class="card-top">
-            <span class="card-number">01</span>
-            <div class="card-links">
-              <a href="https://github.com/Anesh2302/talentos" target="_blank" class="card-link" title="GitHub">GH</a>
-              <a href="https://talentos-cyan.vercel.app" target="_blank" class="card-link live-link" title="Live">LIVE</a>
+          <!-- 1. Talentos -->
+          <div class="project-card" data-category="web">
+            <div class="card-comic-top">
+              <span class="card-issue">#01</span>
+              <div class="card-links">
+                <a href="https://github.com/Anesh2302/talentos" target="_blank" class="card-link">GH</a>
+                <a href="https://talentos-cyan.vercel.app" target="_blank" class="card-link live">LIVE</a>
+              </div>
+            </div>
+            <h3 class="card-title">TALENTOS</h3>
+            <p class="card-desc">Recruitment & talent management platform — OTP email verification, TOTP 2FA, role-based access, job management, todo system, security dashboard.</p>
+            <div class="card-tech"><span>Flask</span><span>Python</span><span>SQLite</span></div>
+            <div class="card-footer">
+              <a href="https://talentos-cyan.vercel.app" target="_blank" class="btn btn-sm btn-red">LIVE DEMO</a>
+              <a href="https://github.com/Anesh2302/talentos" target="_blank" class="btn btn-sm btn-outline">GITHUB</a>
             </div>
           </div>
-          <h3 class="card-title">Talentos</h3>
-          <p class="card-desc">Recruitment & talent management platform — OTP email verification, TOTP 2FA, role-based access (admin/candidate), job management, todo system, login history, backup codes, CSV export, security dashboard.</p>
-          <div class="card-tech">
-            <span>Flask</span><span>Python</span><span>SQLite</span><span>Bootstrap</span>
-          </div>
-          <div class="card-footer">
-            <a href="https://talentos-cyan.vercel.app" target="_blank" class="btn btn-sm btn-marvel">LIVE DEMO</a>
-            <a href="https://github.com/Anesh2302/talentos" target="_blank" class="btn btn-sm btn-outline-marvel">GITHUB</a>
-          </div>
-        </div>
 
-        <!-- 2. Class 11 Chemistry Lab -->
-        <div class="project-card" data-category="web">
-          <div class="card-top">
-            <span class="card-number">02</span>
-            <div class="card-links">
-              <a href="https://github.com/Anesh2302/class11-chem" target="_blank" class="card-link" title="GitHub">GH</a>
-              <a href="https://anesh2302.github.io/class11-chem/" target="_blank" class="card-link live-link" title="Live">LIVE</a>
+          <!-- 2. Class 11 Chemistry Lab -->
+          <div class="project-card" data-category="web">
+            <div class="card-comic-top">
+              <span class="card-issue">#02</span>
+              <div class="card-links">
+                <a href="https://github.com/Anesh2302/class11-chem" target="_blank" class="card-link">GH</a>
+                <a href="https://anesh2302.github.io/class11-chem/" target="_blank" class="card-link live">LIVE</a>
+              </div>
+            </div>
+            <h3 class="card-title">CLASS 11 CHEMISTRY LAB</h3>
+            <p class="card-desc">Interactive offline chemistry learning — periodic table (118 elements), virtual lab, 21 experiments, reaction predictor, quizzes. NCERT Chapters 1-6.</p>
+            <div class="card-tech"><span>HTML/CSS</span><span>JavaScript</span><span>Node.js</span></div>
+            <div class="card-footer">
+              <a href="https://anesh2302.github.io/class11-chem/" target="_blank" class="btn btn-sm btn-red">LIVE DEMO</a>
+              <a href="https://github.com/Anesh2302/class11-chem" target="_blank" class="btn btn-sm btn-outline">GITHUB</a>
             </div>
           </div>
-          <h3 class="card-title">Class 11 Chemistry Lab</h3>
-          <p class="card-desc">Interactive offline chemistry learning — periodic table (118 elements), virtual lab with reagents, 21 experiments, reaction predictor, calculators, quizzes, discovery collection. NCERT Ch 1–6. Works offline.</p>
-          <div class="card-tech">
-            <span>HTML/CSS</span><span>JavaScript</span><span>Node.js</span>
-          </div>
-          <div class="card-footer">
-            <a href="https://anesh2302.github.io/class11-chem/" target="_blank" class="btn btn-sm btn-marvel">LIVE DEMO</a>
-            <a href="https://github.com/Anesh2302/class11-chem" target="_blank" class="btn btn-sm btn-outline-marvel">GITHUB</a>
-          </div>
-        </div>
 
-        <!-- 3. ETamil Books -->
-        <div class="project-card" data-category="web">
-          <div class="card-top">
-            <span class="card-number">03</span>
-            <div class="card-links">
-              <a href="https://github.com/Anesh2302/MR_ETamilBooks" target="_blank" class="card-link" title="GitHub">GH</a>
-              <a href="https://anesh2302.github.io/MR_ETamilBooks/" target="_blank" class="card-link live-link" title="Live">LIVE</a>
+          <!-- 3. ETamil Books -->
+          <div class="project-card" data-category="web">
+            <div class="card-comic-top">
+              <span class="card-issue">#03</span>
+              <div class="card-links">
+                <a href="https://github.com/Anesh2302/MR_ETamilBooks" target="_blank" class="card-link">GH</a>
+                <a href="https://anesh2302.github.io/MR_ETamilBooks/" target="_blank" class="card-link live">LIVE</a>
+              </div>
+            </div>
+            <h3 class="card-title">MR ETAMIL BOOKS</h3>
+            <p class="card-desc">Tamil E-Book translator platform. Browse and read Tamil literature digitally. Express backend, MySQL database, Next.js frontend.</p>
+            <div class="card-tech"><span>Next.js</span><span>Express</span><span>MySQL</span></div>
+            <div class="card-footer">
+              <a href="https://anesh2302.github.io/MR_ETamilBooks/" target="_blank" class="btn btn-sm btn-red">LIVE DEMO</a>
+              <a href="https://github.com/Anesh2302/MR_ETamilBooks" target="_blank" class="btn btn-sm btn-outline">GITHUB</a>
             </div>
           </div>
-          <h3 class="card-title">MR ETamil Books</h3>
-          <p class="card-desc">Tamil E-Book translator platform — browse and read Tamil literature digitally. Express backend, MySQL database, Next.js frontend.</p>
-          <div class="card-tech">
-            <span>Next.js</span><span>Express</span><span>MySQL</span><span>Node.js</span>
-          </div>
-          <div class="card-footer">
-            <a href="https://anesh2302.github.io/MR_ETamilBooks/" target="_blank" class="btn btn-sm btn-marvel">LIVE DEMO</a>
-            <a href="https://github.com/Anesh2302/MR_ETamilBooks" target="_blank" class="btn btn-sm btn-outline-marvel">GITHUB</a>
-          </div>
-        </div>
 
-        <!-- 4. SimonPeter AI -->
-        <div class="project-card" data-category="ai">
-          <div class="card-top">
-            <span class="card-number">04</span>
-            <div class="card-links">
-              <a href="https://github.com/Anesh2302/simonpeterai" target="_blank" class="card-link" title="GitHub">GH</a>
+          <!-- 4. SimonPeter AI -->
+          <div class="project-card" data-category="ai">
+            <div class="card-comic-top">
+              <span class="card-issue">#04</span>
+              <div class="card-links">
+                <a href="https://github.com/Anesh2302/simonpeterai" target="_blank" class="card-link">GH</a>
+              </div>
+            </div>
+            <h3 class="card-title">SIMONPETER AI</h3>
+            <p class="card-desc">Personal AI assistant — voice commands & text mode. Plays music, opens apps, weather, screenshots, reminders, locks PC. pyttsx3 + Google Speech.</p>
+            <div class="card-tech"><span>Python</span><span>pyttsx3</span><span>SpeechRecognition</span></div>
+            <div class="card-footer">
+              <a href="https://github.com/Anesh2302/simonpeterai" target="_blank" class="btn btn-sm btn-outline">GITHUB</a>
             </div>
           </div>
-          <h3 class="card-title">SimonPeter AI</h3>
-          <p class="card-desc">Personal AI assistant — voice commands & text mode. Plays music, opens apps (Gmail, Spotify, Netflix, WhatsApp), weather, screenshots, reminders, lock PC. pyttsx3 + Google Speech Recognition.</p>
-          <div class="card-tech">
-            <span>Python</span><span>pyttsx3</span><span>SpeechRecognition</span>
-          </div>
-          <div class="card-footer">
-            <a href="https://github.com/Anesh2302/simonpeterai" target="_blank" class="btn btn-sm btn-outline-marvel">GITHUB</a>
-          </div>
-        </div>
 
-        <!-- 5. ProjectPop -->
-        <div class="project-card" data-category="tool">
-          <div class="card-top">
-            <span class="card-number">05</span>
-            <div class="card-links">
-              <a href="https://github.com/Anesh2302/projectpop" target="_blank" class="card-link" title="GitHub">GH</a>
+          <!-- 5. ProjectPop -->
+          <div class="project-card" data-category="tool">
+            <div class="card-comic-top">
+              <span class="card-issue">#05</span>
+              <div class="card-links">
+                <a href="https://github.com/Anesh2302/projectpop" target="_blank" class="card-link">GH</a>
+              </div>
+            </div>
+            <h3 class="card-title">PROJECTPOP</h3>
+            <p class="card-desc">CLI tool — project analyzer, security monitor, GitHub publisher. Scans for vulnerabilities, monitors logs, blocks IPs, OTP auth, email alerts.</p>
+            <div class="card-tech"><span>Python</span><span>CLI</span><span>GitHub API</span></div>
+            <div class="card-footer">
+              <a href="https://github.com/Anesh2302/projectpop" target="_blank" class="btn btn-sm btn-outline">GITHUB</a>
             </div>
           </div>
-          <h3 class="card-title">ProjectPop</h3>
-          <p class="card-desc">CLI tool — project analyzer, security monitor, GitHub publisher. Scans for vulnerabilities, monitors logs, blocks IPs, OTP auth, email alerts, daily summaries. Installable via pip.</p>
-          <div class="card-tech">
-            <span>Python</span><span>CLI</span><span>GitHub API</span><span>SMTP</span>
-          </div>
-          <div class="card-footer">
-            <a href="https://github.com/Anesh2302/projectpop" target="_blank" class="btn btn-sm btn-outline-marvel">GITHUB</a>
-          </div>
-        </div>
 
-        <!-- 6. Insyrium Portal -->
-        <div class="project-card" data-category="web">
-          <div class="card-top">
-            <span class="card-number">06</span>
+          <!-- 6. Insyrium Portal -->
+          <div class="project-card" data-category="web">
+            <div class="card-comic-top">
+              <span class="card-issue">#06</span>
+            </div>
+            <h3 class="card-title">INSYRIUM PORTAL</h3>
+            <p class="card-desc">Flask SaaS portal — real-time Socket.IO, RBAC, audit logging, community features, admin dashboard, email OTP, rate limiting.</p>
+            <div class="card-tech"><span>Flask</span><span>Socket.IO</span><span>SQLAlchemy</span></div>
+            <div class="card-footer">
+              <span class="btn btn-sm btn-ghost">LOCAL ONLY</span>
+            </div>
           </div>
-          <h3 class="card-title">Insyrium Portal</h3>
-          <p class="card-desc">Flask SaaS portal — real-time Socket.IO, RBAC, audit logging, community features, admin dashboard, email OTP, rate limiting, security headers. Local only.</p>
-          <div class="card-tech">
-            <span>Flask</span><span>Socket.IO</span><span>SQLAlchemy</span><span>APScheduler</span>
-          </div>
-          <div class="card-footer">
-            <span class="btn btn-sm tag-local">LOCAL ONLY</span>
-          </div>
-        </div>
 
-        <!-- 7. MongoDB Academy -->
-        <div class="project-card" data-category="web">
-          <div class="card-top">
-            <span class="card-number">07</span>
+          <!-- 7. MongoDB Academy -->
+          <div class="project-card" data-category="web">
+            <div class="card-comic-top">
+              <span class="card-issue">#07</span>
+            </div>
+            <h3 class="card-title">MONGODB ACADEMY</h3>
+            <p class="card-desc">MongoDB learning platform — interactive playground, progress tracking, dark/light mode, search. No login. Pure learning.</p>
+            <div class="card-tech"><span>HTML/CSS</span><span>JavaScript</span><span>Python</span></div>
+            <div class="card-footer">
+              <span class="btn btn-sm btn-ghost">LOCAL ONLY</span>
+            </div>
           </div>
-          <h3 class="card-title">MongoDB Academy</h3>
-          <p class="card-desc">Complete MongoDB learning platform — interactive playground, progress tracking, dark/light mode, search. No login. Pure learning. Python HTTP server on port 2302.</p>
-          <div class="card-tech">
-            <span>HTML/CSS</span><span>JavaScript</span><span>Python</span>
-          </div>
-          <div class="card-footer">
-            <span class="btn btn-sm tag-local">LOCAL ONLY</span>
-          </div>
-        </div>
 
+        </div>
       </div>
     </div>
   </section>
@@ -233,18 +233,20 @@
   <!-- RESUME -->
   <section class="resume" id="resume">
     <div class="container">
-      <div class="section-header">
-        <span class="section-tag">RESUME</span>
-        <h2 class="section-title">My Resume</h2>
-      </div>
-      <div class="resume-card">
-        <div class="resume-left">
-          <h3>Anesh G J</h3>
-          <p>Full-Stack Developer &amp; Security Enthusiast</p>
+      <div class="comic-panel">
+        <div class="panel-header">
+          <span class="panel-number">03</span>
+          <h2 class="panel-title">MY RESUME</h2>
         </div>
-        <div class="resume-actions">
-          <a href="Anesh_GJ_Resume.pdf" target="_blank" class="btn btn-marvel">DOWNLOAD PDF</a>
-          <a href="Anesh_GJ_Resume.pdf" target="_blank" class="btn btn-outline-marvel">VIEW ONLINE</a>
+        <div class="resume-card">
+          <div class="resume-left">
+            <h3>ANESH G J</h3>
+            <p>Full-Stack Developer &amp; Security Enthusiast</p>
+          </div>
+          <div class="resume-actions">
+            <a href="Anesh_GJ_Resume.pdf" target="_blank" class="btn btn-red">DOWNLOAD PDF</a>
+            <a href="Anesh_GJ_Resume.pdf" target="_blank" class="btn btn-outline">VIEW ONLINE</a>
+          </div>
         </div>
       </div>
     </div>
@@ -253,53 +255,47 @@
   <!-- CONTACT -->
   <section class="contact" id="contact">
     <div class="container">
-      <div class="section-header">
-        <span class="section-tag">CONTACT</span>
-        <h2 class="section-title">Get In Touch</h2>
-      </div>
-      <div class="contact-grid">
-        <div class="contact-info">
-          <div class="contact-item">
-            <div class="contact-icon">&#9993;</div>
-            <div>
-              <h4>Email</h4>
-              <a href="mailto:simonpetercys@gmail.com">simonpetercys@gmail.com</a>
-            </div>
-          </div>
-          <div class="contact-item">
-            <div class="contact-icon">&#9733;</div>
-            <div>
-              <h4>GitHub</h4>
-              <a href="https://github.com/Anesh2302" target="_blank">github.com/Anesh2302</a>
-            </div>
-          </div>
+      <div class="comic-panel">
+        <div class="panel-header">
+          <span class="panel-number">04</span>
+          <h2 class="panel-title">CONTACT ME</h2>
         </div>
-        <form class="contact-form" id="contactForm">
-          <div class="form-row">
-            <div class="form-group">
-              <input type="text" id="name" placeholder="Your Name" required>
+        <div class="contact-grid">
+          <div class="contact-info">
+            <div class="contact-item">
+              <div class="contact-icon-mail">&#9993;</div>
+              <div>
+                <h4>EMAIL</h4>
+                <a href="mailto:simonpetercys@gmail.com">simonpetercys@gmail.com</a>
+              </div>
             </div>
-            <div class="form-group">
-              <input type="email" id="email" placeholder="Your Email" required>
+            <div class="contact-item">
+              <div class="contact-icon-gh">&#9733;</div>
+              <div>
+                <h4>GITHUB</h4>
+                <a href="https://github.com/Anesh2302" target="_blank">github.com/Anesh2302</a>
+              </div>
             </div>
           </div>
-          <div class="form-group">
-            <textarea id="message" rows="5" placeholder="Your Message" required></textarea>
-          </div>
-          <button type="submit" class="btn btn-marvel btn-full">SEND MESSAGE</button>
-        </form>
+          <form class="contact-form" id="contactForm">
+            <div class="form-row">
+              <input type="text" id="name" placeholder="YOUR NAME" required>
+              <input type="email" id="email" placeholder="YOUR EMAIL" required>
+            </div>
+            <textarea id="message" rows="5" placeholder="YOUR MESSAGE" required></textarea>
+            <button type="submit" class="btn btn-red btn-full">SEND MESSAGE</button>
+          </form>
+        </div>
       </div>
     </div>
   </section>
 
   <footer class="footer">
-    <div class="container">
-      <div class="footer-content">
-        <p>&copy; 2026 ANESH G J</p>
-        <div class="footer-links">
-          <a href="https://github.com/Anesh2302" target="_blank">GitHub</a>
-          <a href="mailto:simonpetercys@gmail.com">Email</a>
-        </div>
+    <div class="container footer-inner">
+      <p>&copy; 2026 ANESH G J</p>
+      <div class="footer-links">
+        <a href="https://github.com/Anesh2302" target="_blank">GitHub</a>
+        <a href="mailto:simonpetercys@gmail.com">Email</a>
       </div>
     </div>
   </footer>
