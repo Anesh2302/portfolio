@@ -4,16 +4,17 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Anesh G J — Developer Portfolio</title>
-  <meta name="description" content="Portfolio of Anesh G J — Full-Stack Developer and Security Enthusiast.">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Bangers&family=Inter:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
+
+  <!-- MARVEL-STYLE NAV -->
   <nav class="navbar" id="navbar">
     <div class="nav-container">
-      <a href="#hero" class="nav-logo">AG</a>
+      <a href="#hero" class="nav-logo">ANESH<span class="logo-sub">DEV</span></a>
       <ul class="nav-links">
         <li><a href="#about">About</a></li>
         <li><a href="#projects">Projects</a></li>
@@ -26,30 +27,37 @@
     </div>
   </nav>
 
+  <!-- HERO — MARVEL SPLASH PAGE -->
   <section class="hero" id="hero">
     <div class="hero-bg"></div>
     <div class="hero-content">
       <div class="hero-layout">
         <div class="hero-text">
-          <p class="hero-greeting">Hello, I'm</p>
-          <h1 class="hero-name">Anesh <span class="accent">G J</span></h1>
-          <p class="hero-tagline">Full-Stack Developer &amp; Security Enthusiast</p>
-          <p class="hero-desc">I build web apps, AI tools, and security platforms.</p>
+          <div class="hero-badge">FULL-STACK DEVELOPER</div>
+          <h1 class="hero-name">ANESH<br><span class="accent">G J</span></h1>
+          <p class="hero-tagline">I build web apps, AI tools &amp; security platforms.</p>
           <div class="hero-buttons">
-            <a href="#projects" class="btn btn-primary">View My Work</a>
-            <a href="#contact" class="btn btn-outline">Get In Touch</a>
+            <a href="#projects" class="btn btn-marvel">VIEW MY WORK</a>
+            <a href="#contact" class="btn btn-outline-marvel">GET IN TOUCH</a>
           </div>
         </div>
-        <div class="hero-photo">
-          <img src="profile.jpg" alt="Anesh G J">
+        <div class="hero-photo-wrap">
+          <div class="photo-ring"></div>
+          <div class="photo-ring ring-2"></div>
+          <img src="profile.jpg" alt="Anesh G J" class="hero-photo">
         </div>
       </div>
     </div>
+    <div class="hero-stripes"></div>
   </section>
 
+  <!-- ABOUT -->
   <section class="about" id="about">
     <div class="container">
-      <h2 class="section-title">About Me</h2>
+      <div class="section-header">
+        <span class="section-tag">WHO AM I</span>
+        <h2 class="section-title">About Me</h2>
+      </div>
       <div class="about-grid">
         <div class="about-text">
           <p>I build things — from AI assistants to full-stack web platforms to security tooling. I enjoy working across the entire stack and solving real problems.</p>
@@ -75,159 +83,146 @@
     </div>
   </section>
 
+  <!-- PROJECTS -->
   <section class="projects" id="projects">
     <div class="container">
-      <h2 class="section-title">Projects</h2>
-      <p class="section-subtitle">Real projects, real links</p>
+      <div class="section-header">
+        <span class="section-tag">MY WORK</span>
+        <h2 class="section-title">Projects</h2>
+      </div>
 
       <div class="project-filters">
-        <button class="filter-btn active" data-filter="all">All</button>
-        <button class="filter-btn" data-filter="web">Web Apps</button>
-        <button class="filter-btn" data-filter="ai">AI / Desktop</button>
-        <button class="filter-btn" data-filter="tool">Tools</button>
+        <button class="filter-btn active" data-filter="all">ALL</button>
+        <button class="filter-btn" data-filter="web">WEB APPS</button>
+        <button class="filter-btn" data-filter="ai">AI / DESKTOP</button>
+        <button class="filter-btn" data-filter="tool">TOOLS</button>
       </div>
 
       <div class="projects-grid">
 
         <!-- 1. Talentos -->
         <div class="project-card" data-category="web">
-          <div class="card-header">
-            <div class="card-icon">🎯</div>
+          <div class="card-top">
+            <span class="card-number">01</span>
             <div class="card-links">
-              <a href="https://github.com/Anesh2302/talentos" target="_blank" class="card-link" title="GitHub">
-                <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/></svg>
-              </a>
-              <a href="https://talentos-cyan.vercel.app" target="_blank" class="card-link" title="Live Demo">
-                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>
-              </a>
+              <a href="https://github.com/Anesh2302/talentos" target="_blank" class="card-link" title="GitHub">GH</a>
+              <a href="https://talentos-cyan.vercel.app" target="_blank" class="card-link live-link" title="Live">LIVE</a>
             </div>
           </div>
           <h3 class="card-title">Talentos</h3>
-          <p class="card-desc">Recruitment & talent management platform with OTP email verification, TOTP two-factor auth, role-based access (admin/candidate), job management, todo system, login history, backup codes, CSV export, and a security dashboard with blocked IPs and breach monitoring.</p>
+          <p class="card-desc">Recruitment & talent management platform — OTP email verification, TOTP 2FA, role-based access (admin/candidate), job management, todo system, login history, backup codes, CSV export, security dashboard.</p>
           <div class="card-tech">
             <span>Flask</span><span>Python</span><span>SQLite</span><span>Bootstrap</span>
           </div>
           <div class="card-footer">
-            <a href="https://talentos-cyan.vercel.app" target="_blank" class="btn btn-sm btn-primary">Live Demo</a>
-            <a href="https://github.com/Anesh2302/talentos" target="_blank" class="btn btn-sm">GitHub</a>
+            <a href="https://talentos-cyan.vercel.app" target="_blank" class="btn btn-sm btn-marvel">LIVE DEMO</a>
+            <a href="https://github.com/Anesh2302/talentos" target="_blank" class="btn btn-sm btn-outline-marvel">GITHUB</a>
           </div>
         </div>
 
         <!-- 2. Class 11 Chemistry Lab -->
         <div class="project-card" data-category="web">
-          <div class="card-header">
-            <div class="card-icon">🧪</div>
+          <div class="card-top">
+            <span class="card-number">02</span>
             <div class="card-links">
-              <a href="https://github.com/Anesh2302/class11-chem" target="_blank" class="card-link" title="GitHub">
-                <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/></svg>
-              </a>
-              <a href="https://anesh2302.github.io/class11-chem/" target="_blank" class="card-link" title="Live Demo">
-                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>
-              </a>
+              <a href="https://github.com/Anesh2302/class11-chem" target="_blank" class="card-link" title="GitHub">GH</a>
+              <a href="https://anesh2302.github.io/class11-chem/" target="_blank" class="card-link live-link" title="Live">LIVE</a>
             </div>
           </div>
           <h3 class="card-title">Class 11 Chemistry Lab</h3>
-          <p class="card-desc">Interactive offline chemistry learning site — periodic table (all 118 elements), virtual lab with reagents, 21 step-by-step experiments, reaction predictor, calculators, quizzes, and discovery collection. NCERT Chapters 1–6. Works offline, no login needed.</p>
+          <p class="card-desc">Interactive offline chemistry learning — periodic table (118 elements), virtual lab with reagents, 21 experiments, reaction predictor, calculators, quizzes, discovery collection. NCERT Ch 1–6. Works offline.</p>
           <div class="card-tech">
             <span>HTML/CSS</span><span>JavaScript</span><span>Node.js</span>
           </div>
           <div class="card-footer">
-            <a href="https://anesh2302.github.io/class11-chem/" target="_blank" class="btn btn-sm btn-primary">Live Demo</a>
-            <a href="https://github.com/Anesh2302/class11-chem" target="_blank" class="btn btn-sm">GitHub</a>
+            <a href="https://anesh2302.github.io/class11-chem/" target="_blank" class="btn btn-sm btn-marvel">LIVE DEMO</a>
+            <a href="https://github.com/Anesh2302/class11-chem" target="_blank" class="btn btn-sm btn-outline-marvel">GITHUB</a>
           </div>
         </div>
 
         <!-- 3. ETamil Books -->
         <div class="project-card" data-category="web">
-          <div class="card-header">
-            <div class="card-icon">📚</div>
+          <div class="card-top">
+            <span class="card-number">03</span>
             <div class="card-links">
-              <a href="https://github.com/Anesh2302/MR_ETamilBooks" target="_blank" class="card-link" title="GitHub">
-                <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/></svg>
-              </a>
-              <a href="https://mr-e-tamil-books.vercel.app" target="_blank" class="card-link" title="Live Demo">
-                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>
-              </a>
+              <a href="https://github.com/Anesh2302/MR_ETamilBooks" target="_blank" class="card-link" title="GitHub">GH</a>
+              <a href="https://mr-e-tamil-books.vercel.app" target="_blank" class="card-link live-link" title="Live">LIVE</a>
             </div>
           </div>
           <h3 class="card-title">MR ETamil Books</h3>
-          <p class="card-desc">Tamil E-Book translator platform. Browse and read Tamil literature digitally. Express backend with MySQL database and Next.js frontend, deployed on Vercel.</p>
+          <p class="card-desc">Tamil E-Book translator platform — browse and read Tamil literature digitally. Express backend, MySQL database, Next.js frontend.</p>
           <div class="card-tech">
             <span>Next.js</span><span>Express</span><span>MySQL</span><span>Node.js</span>
           </div>
           <div class="card-footer">
-            <a href="https://mr-e-tamil-books.vercel.app" target="_blank" class="btn btn-sm btn-primary">Live Demo</a>
-            <a href="https://github.com/Anesh2302/MR_ETamilBooks" target="_blank" class="btn btn-sm">GitHub</a>
+            <a href="https://mr-e-tamil-books.vercel.app" target="_blank" class="btn btn-sm btn-marvel">LIVE DEMO</a>
+            <a href="https://github.com/Anesh2302/MR_ETamilBooks" target="_blank" class="btn btn-sm btn-outline-marvel">GITHUB</a>
           </div>
         </div>
 
         <!-- 4. SimonPeter AI -->
         <div class="project-card" data-category="ai">
-          <div class="card-header">
-            <div class="card-icon">🤖</div>
+          <div class="card-top">
+            <span class="card-number">04</span>
             <div class="card-links">
-              <a href="https://github.com/Anesh2302/simonpeterai" target="_blank" class="card-link" title="GitHub">
-                <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/></svg>
-              </a>
+              <a href="https://github.com/Anesh2302/simonpeterai" target="_blank" class="card-link" title="GitHub">GH</a>
             </div>
           </div>
           <h3 class="card-title">SimonPeter AI</h3>
-          <p class="card-desc">Personal AI assistant with voice commands and text mode. Controls your PC — plays music on YouTube, opens apps (Gmail, Calendar, Drive, Spotify, Netflix, WhatsApp), tells time/date, weather, takes screenshots, sets reminders, locks PC, and more. Uses pyttsx3 for speech and Google Speech Recognition.</p>
+          <p class="card-desc">Personal AI assistant — voice commands & text mode. Plays music, opens apps (Gmail, Spotify, Netflix, WhatsApp), weather, screenshots, reminders, lock PC. pyttsx3 + Google Speech Recognition.</p>
           <div class="card-tech">
             <span>Python</span><span>pyttsx3</span><span>SpeechRecognition</span>
           </div>
           <div class="card-footer">
-            <a href="https://github.com/Anesh2302/simonpeterai" target="_blank" class="btn btn-sm">View on GitHub</a>
+            <a href="https://github.com/Anesh2302/simonpeterai" target="_blank" class="btn btn-sm btn-outline-marvel">GITHUB</a>
           </div>
         </div>
 
         <!-- 5. ProjectPop -->
         <div class="project-card" data-category="tool">
-          <div class="card-header">
-            <div class="card-icon">🛡️</div>
+          <div class="card-top">
+            <span class="card-number">05</span>
             <div class="card-links">
-              <a href="https://github.com/Anesh2302/projectpop" target="_blank" class="card-link" title="GitHub">
-                <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/></svg>
-              </a>
+              <a href="https://github.com/Anesh2302/projectpop" target="_blank" class="card-link" title="GitHub">GH</a>
             </div>
           </div>
           <h3 class="card-title">ProjectPop</h3>
-          <p class="card-desc">CLI tool — project analyzer, security monitor, and GitHub publisher. Scans projects for vulnerabilities, monitors logs, blocks IPs, generates OTP for auth, sends email alerts and daily summaries, and auto-pushes repos to GitHub. Installable via pip.</p>
+          <p class="card-desc">CLI tool — project analyzer, security monitor, GitHub publisher. Scans for vulnerabilities, monitors logs, blocks IPs, OTP auth, email alerts, daily summaries. Installable via pip.</p>
           <div class="card-tech">
             <span>Python</span><span>CLI</span><span>GitHub API</span><span>SMTP</span>
           </div>
           <div class="card-footer">
-            <a href="https://github.com/Anesh2302/projectpop" target="_blank" class="btn btn-sm">View on GitHub</a>
+            <a href="https://github.com/Anesh2302/projectpop" target="_blank" class="btn btn-sm btn-outline-marvel">GITHUB</a>
           </div>
         </div>
 
         <!-- 6. Insyrium Portal -->
         <div class="project-card" data-category="web">
-          <div class="card-header">
-            <div class="card-icon">🔮</div>
+          <div class="card-top">
+            <span class="card-number">06</span>
           </div>
           <h3 class="card-title">Insyrium Portal</h3>
-          <p class="card-desc">Flask SaaS portal with real-time Socket.IO communication, role-based access control, audit logging, community features, admin dashboard, email OTP, rate limiting, and security headers. Local project (not yet deployed).</p>
+          <p class="card-desc">Flask SaaS portal — real-time Socket.IO, RBAC, audit logging, community features, admin dashboard, email OTP, rate limiting, security headers. Local only.</p>
           <div class="card-tech">
             <span>Flask</span><span>Socket.IO</span><span>SQLAlchemy</span><span>APScheduler</span>
           </div>
           <div class="card-footer">
-            <span class="btn btn-sm" style="opacity:.5;cursor:default">Local Only</span>
+            <span class="btn btn-sm tag-local">LOCAL ONLY</span>
           </div>
         </div>
 
         <!-- 7. MongoDB Academy -->
         <div class="project-card" data-category="web">
-          <div class="card-header">
-            <div class="card-icon">🍃</div>
+          <div class="card-top">
+            <span class="card-number">07</span>
           </div>
           <h3 class="card-title">MongoDB Academy</h3>
-          <p class="card-desc">Complete step-by-step MongoDB learning platform with interactive playground, progress tracking, dark/light mode, and search. Runs on a local Python HTTP server on port 2302. No login, no admin — pure learning.</p>
+          <p class="card-desc">Complete MongoDB learning platform — interactive playground, progress tracking, dark/light mode, search. No login. Pure learning. Python HTTP server on port 2302.</p>
           <div class="card-tech">
             <span>HTML/CSS</span><span>JavaScript</span><span>Python</span>
           </div>
           <div class="card-footer">
-            <span class="btn btn-sm" style="opacity:.5;cursor:default">Local Only</span>
+            <span class="btn btn-sm tag-local">LOCAL ONLY</span>
           </div>
         </div>
 
@@ -235,43 +230,44 @@
     </div>
   </section>
 
+  <!-- RESUME -->
   <section class="resume" id="resume">
     <div class="container">
-      <h2 class="section-title">Resume</h2>
-      <p class="section-subtitle">Download my resume for details on experience and skills</p>
+      <div class="section-header">
+        <span class="section-tag">RESUME</span>
+        <h2 class="section-title">My Resume</h2>
+      </div>
       <div class="resume-card">
-        <div class="resume-icon">📄</div>
-        <h3>Anesh G J — Resume</h3>
-        <p>Full-Stack Developer &amp; Security Enthusiast</p>
+        <div class="resume-left">
+          <h3>Anesh G J</h3>
+          <p>Full-Stack Developer &amp; Security Enthusiast</p>
+        </div>
         <div class="resume-actions">
-          <a href="Anesh_GJ_Resume.pdf" target="_blank" class="btn btn-primary">
-            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" y1="15" x2="12" y2="3"/></svg>
-            Download Resume
-          </a>
-          <a href="Anesh_GJ_Resume.pdf" target="_blank" class="btn btn-outline">
-            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"/><circle cx="12" cy="12" r="3"/></svg>
-            View Online
-          </a>
+          <a href="Anesh_GJ_Resume.pdf" target="_blank" class="btn btn-marvel">DOWNLOAD PDF</a>
+          <a href="Anesh_GJ_Resume.pdf" target="_blank" class="btn btn-outline-marvel">VIEW ONLINE</a>
         </div>
       </div>
     </div>
   </section>
 
+  <!-- CONTACT -->
   <section class="contact" id="contact">
     <div class="container">
-      <h2 class="section-title">Get In Touch</h2>
-      <p class="section-subtitle">Want to collaborate or have a question? Let's talk.</p>
+      <div class="section-header">
+        <span class="section-tag">CONTACT</span>
+        <h2 class="section-title">Get In Touch</h2>
+      </div>
       <div class="contact-grid">
         <div class="contact-info">
           <div class="contact-item">
-            <div class="contact-icon">📧</div>
+            <div class="contact-icon">&#9993;</div>
             <div>
               <h4>Email</h4>
               <a href="mailto:simonpetercys@gmail.com">simonpetercys@gmail.com</a>
             </div>
           </div>
           <div class="contact-item">
-            <div class="contact-icon">🐙</div>
+            <div class="contact-icon">&#9733;</div>
             <div>
               <h4>GitHub</h4>
               <a href="https://github.com/Anesh2302" target="_blank">github.com/Anesh2302</a>
@@ -279,16 +275,18 @@
           </div>
         </div>
         <form class="contact-form" id="contactForm">
-          <div class="form-group">
-            <input type="text" id="name" placeholder="Your Name" required>
-          </div>
-          <div class="form-group">
-            <input type="email" id="email" placeholder="Your Email" required>
+          <div class="form-row">
+            <div class="form-group">
+              <input type="text" id="name" placeholder="Your Name" required>
+            </div>
+            <div class="form-group">
+              <input type="email" id="email" placeholder="Your Email" required>
+            </div>
           </div>
           <div class="form-group">
             <textarea id="message" rows="5" placeholder="Your Message" required></textarea>
           </div>
-          <button type="submit" class="btn btn-primary btn-full">Send Message</button>
+          <button type="submit" class="btn btn-marvel btn-full">SEND MESSAGE</button>
         </form>
       </div>
     </div>
@@ -297,7 +295,7 @@
   <footer class="footer">
     <div class="container">
       <div class="footer-content">
-        <p>&copy; 2026 Anesh G J</p>
+        <p>&copy; 2026 ANESH G J</p>
         <div class="footer-links">
           <a href="https://github.com/Anesh2302" target="_blank">GitHub</a>
           <a href="mailto:simonpetercys@gmail.com">Email</a>
