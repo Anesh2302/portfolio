@@ -15,7 +15,7 @@
   <nav class="navbar" id="navbar">
     <div class="nav-container">
       <a href="#hero" class="nav-logo">
-        <span class="logo-box">A</span>
+        <div class="logo-arc"></div>
         <span class="logo-text">NESH<span class="gold">DEV</span></span>
       </a>
       <ul class="nav-links">
@@ -30,52 +30,54 @@
     </div>
   </nav>
 
-  <!-- HERO — MARVEL SPLASH -->
+  <!-- HERO — IRON MAN HUD -->
   <section class="hero" id="hero">
-    <div class="halftone"></div>
     <div class="hero-content">
       <div class="hero-layout">
         <div class="hero-text">
-          <div class="comic-badge">I AM</div>
+          <div class="hud-badge">J.A.R.V.I.S. ONLINE</div>
           <h1 class="hero-name">
             <span class="name-line">ANESH</span>
-            <span class="name-line accent">G J</span>
+            <span class="name-line gold">G J</span>
           </h1>
           <p class="hero-tagline">Full-Stack Developer &amp; Security Enthusiast</p>
           <p class="hero-desc">I build web apps, AI tools &amp; security platforms. From idea to production.</p>
           <div class="hero-buttons">
-            <a href="#projects" class="btn btn-red">VIEW MY WORK</a>
-            <a href="#contact" class="btn btn-white">GET IN TOUCH</a>
+            <a href="#projects" class="btn btn-gold">VIEW MY WORK</a>
+            <a href="#contact" class="btn btn-arc">GET IN TOUCH</a>
           </div>
         </div>
         <div class="hero-photo-section">
+          <div class="photo-ring-outer"></div>
+          <div class="photo-ring-mid"></div>
           <div class="photo-frame">
             <img src="profile.jpg" alt="Anesh G J" class="hero-photo">
           </div>
-          <div class="photo-action-text">DEVELOPER</div>
+          <div class="photo-arc"></div>
+          <div class="hud-corner hud-tl"></div>
+          <div class="hud-corner hud-tr"></div>
+          <div class="hud-corner hud-bl"></div>
+          <div class="hud-corner hud-br"></div>
         </div>
       </div>
     </div>
-    <!-- comic action bursts -->
-    <div class="burst burst-1">BOOM!</div>
-    <div class="burst burst-2">POW!</div>
   </section>
 
-  <!-- ABOUT — SPEECH BUBBLE STYLE -->
+  <!-- ABOUT — HUD PANEL -->
   <section class="about" id="about">
     <div class="container">
-      <div class="comic-panel">
+      <div class="hud-panel">
         <div class="panel-header">
-          <span class="panel-number">01</span>
+          <span class="panel-id">SYS://ABOUT</span>
           <h2 class="panel-title">ABOUT ME</h2>
         </div>
-        <div class="about-grid">
-          <div class="speech-bubble">
+        <div class="about-content">
+          <div class="about-text-box">
             <p>I build things — from AI assistants to full-stack web platforms to security tooling. I enjoy working across the entire stack and solving real problems.</p>
             <p>Currently focused on Flask/Python backends, JavaScript frontends, and cybersecurity tools.</p>
           </div>
           <div class="tech-box">
-            <h3>MY WEAPONS OF CHOICE</h3>
+            <h3>WEAPONS OF CHOICE</h3>
             <div class="tech-tags">
               <span class="tag">Python</span>
               <span class="tag">JavaScript</span>
@@ -98,9 +100,9 @@
   <!-- PROJECTS — COMIC PANELS -->
   <section class="projects" id="projects">
     <div class="container">
-      <div class="comic-panel">
+      <div class="hud-panel">
         <div class="panel-header">
-          <span class="panel-number">02</span>
+          <span class="panel-id">SYS://PROJECTS</span>
           <h2 class="panel-title">MY PROJECTS</h2>
         </div>
 
@@ -126,7 +128,7 @@
             <p class="card-desc">Recruitment & talent management platform — OTP email verification, TOTP 2FA, role-based access, job management, todo system, security dashboard.</p>
             <div class="card-tech"><span>Flask</span><span>Python</span><span>SQLite</span></div>
             <div class="card-footer">
-              <a href="https://talentos-cyan.vercel.app" target="_blank" class="btn btn-sm btn-red">LIVE DEMO</a>
+              <a href="https://talentos-cyan.vercel.app" target="_blank" class="btn btn-sm btn-gold">LIVE DEMO</a>
               <a href="https://github.com/Anesh2302/talentos" target="_blank" class="btn btn-sm btn-outline">GITHUB</a>
             </div>
           </div>
@@ -144,7 +146,7 @@
             <p class="card-desc">Interactive offline chemistry learning — periodic table (118 elements), virtual lab, 21 experiments, reaction predictor, quizzes. NCERT Chapters 1-6.</p>
             <div class="card-tech"><span>HTML/CSS</span><span>JavaScript</span><span>Node.js</span></div>
             <div class="card-footer">
-              <a href="https://anesh2302.github.io/class11-chem/" target="_blank" class="btn btn-sm btn-red">LIVE DEMO</a>
+              <a href="https://anesh2302.github.io/class11-chem/" target="_blank" class="btn btn-sm btn-gold">LIVE DEMO</a>
               <a href="https://github.com/Anesh2302/class11-chem" target="_blank" class="btn btn-sm btn-outline">GITHUB</a>
             </div>
           </div>
@@ -162,7 +164,7 @@
             <p class="card-desc">Tamil E-Book translator platform. Browse and read Tamil literature digitally. Express backend, MySQL database, Next.js frontend.</p>
             <div class="card-tech"><span>Next.js</span><span>Express</span><span>MySQL</span></div>
             <div class="card-footer">
-              <a href="https://anesh2302.github.io/MR_ETamilBooks/" target="_blank" class="btn btn-sm btn-red">LIVE DEMO</a>
+              <a href="https://anesh2302.github.io/MR_ETamilBooks/" target="_blank" class="btn btn-sm btn-gold">LIVE DEMO</a>
               <a href="https://github.com/Anesh2302/MR_ETamilBooks" target="_blank" class="btn btn-sm btn-outline">GITHUB</a>
             </div>
           </div>
@@ -233,9 +235,9 @@
   <!-- RESUME -->
   <section class="resume" id="resume">
     <div class="container">
-      <div class="comic-panel">
+      <div class="hud-panel">
         <div class="panel-header">
-          <span class="panel-number">03</span>
+          <span class="panel-id">SYS://RESUME</span>
           <h2 class="panel-title">MY RESUME</h2>
         </div>
         <div class="resume-card">
@@ -244,8 +246,8 @@
             <p>Full-Stack Developer &amp; Security Enthusiast</p>
           </div>
           <div class="resume-actions">
-            <a href="Anesh_GJ_Resume.pdf" target="_blank" class="btn btn-red">DOWNLOAD PDF</a>
-            <a href="Anesh_GJ_Resume.pdf" target="_blank" class="btn btn-outline">VIEW ONLINE</a>
+            <a href="Anesh_GJ_Resume.pdf" target="_blank" class="btn btn-gold">DOWNLOAD PDF</a>
+            <a href="Anesh_GJ_Resume.pdf" target="_blank" class="btn btn-arc">VIEW ONLINE</a>
           </div>
         </div>
       </div>
@@ -255,9 +257,9 @@
   <!-- CONTACT -->
   <section class="contact" id="contact">
     <div class="container">
-      <div class="comic-panel">
+      <div class="hud-panel">
         <div class="panel-header">
-          <span class="panel-number">04</span>
+          <span class="panel-id">SYS://CONTACT</span>
           <h2 class="panel-title">CONTACT ME</h2>
         </div>
         <div class="contact-grid">
@@ -283,7 +285,7 @@
               <input type="email" id="email" placeholder="YOUR EMAIL" required>
             </div>
             <textarea id="message" rows="5" placeholder="YOUR MESSAGE" required></textarea>
-            <button type="submit" class="btn btn-red btn-full">SEND MESSAGE</button>
+            <button type="submit" class="btn btn-gold btn-full">SEND MESSAGE</button>
           </form>
         </div>
       </div>
